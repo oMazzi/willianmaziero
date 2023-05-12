@@ -1,0 +1,54 @@
+.header {
+  background: #212A3E;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.header div a {
+  color: #F1F6F9;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.info a {
+    background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.info a:before{
+  content: '';
+  background: #F1F6F9;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.info a:hover {
+ background-position: 0;
+}
+
+.info a:hover::before{
+  width: 100%;
+}
+
+
+
+
+.info a {
+  margin-left: 1rem;
+}
