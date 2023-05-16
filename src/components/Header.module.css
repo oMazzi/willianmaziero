@@ -24,6 +24,7 @@
   padding: 5px 0;
   position: relative;
   transition: all 0.3s ease-in-out;
+  margin-left: 1rem;
 }
 
 .info a:before{
@@ -46,9 +47,6 @@
   width: 100%;
 }
 
-
-
-
-.info a {
-  margin-left: 1rem;
+.info a::before .active {
+  width: 100%;
 }

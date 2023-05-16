@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  height: 38rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  padding-top: 15rem;
+  color: #212A3E;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px rgba(24, 23, 127, 0.3);
+}
+
+.phrase {
+  font-size: 1.5rem;
+  padding-bottom: 15rem;
+  color: #212A3E;
+  font-weight: 500;
+}
+
+.animeShowUp {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: animeShowUp 1s forwards;
+}
+
+@keyframes animeShowUp {
+  to{ 
+    opacity: 1;
+    transform: initial;
+  }}
+
+
+
+
