@@ -1,7 +1,110 @@
 import React from 'react';
+import styles from './Contact.module.css';
+import { ReactComponent as Person } from '../assets/person.svg';
+import { ReactComponent as Location } from '../assets/location.svg';
+import { ReactComponent as Email } from '../assets/email.svg';
 
 const Contact = () => {
-  return <div>Contact</div>;
+  const [name, setName] = React.useState('');
+  const [subject, setSubject] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [message, setMessage] = React.useState('');
+
+  const handleChangeName = (event) => {
+    setName(event.target.value);
+  };
+  const handleChangeSubject = (event) => {
+    setSubject(event.target.value);
+  };
+  const handleChangeEmail = (event) => {
+    setEmail(event.target.value);
+  };
+  const handleChangeMessage = (event) => {
+    setMessage(event.target.value);
+  };
+
+  return (
+    <section>
+      <div className={styles.title}>
+        <h1>Contact</h1>
+      </div>
+      <div className={styles.container}>
+        <form className={styles.form}>
+          <h3>Message me</h3>
+          <div className={styles.inputContainer}>
+            <label for="name">Name</label>
+            <input
+              value={name}
+              id="name"
+              type="text"
+              onChange={handleChangeName}
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <label for="subject">Subject</label>
+            <input
+              value={subject}
+              type="text"
+              id="subject"
+              onChange={handleChangeSubject}
+            />
+          </div>
+          <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
+            <label for="email">Email</label>
+            <input
+              value={email}
+              type="text"
+              id="email"
+              onChange={handleChangeEmail}
+            />
+          </div>
+          <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
+            <label for="message">Send your message..</label>
+            <textarea
+              value={message}
+              name="Message"
+              id="message"
+              cols="30"
+              rows="5"
+              onChange={handleChangeMessage}
+            ></textarea>
+          </div>
+          <div className={styles.btn}>
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+        <div>
+          <div className={styles.contactMain}>
+            <h3 className={styles.titleContact}>Contact Information</h3>
+            <p>We can work and build amazing things together</p>
+          </div>
+          <div className={styles.containerContact}>
+            <div>
+              <Person />
+              <div>
+                <h3>Name</h3>
+                <p>Willian Maziero</p>
+              </div>
+            </div>
+            <div>
+              <Location />
+              <div>
+                <h3>Location</h3>
+                <p>London, Ontario</p>
+              </div>
+            </div>
+            <div>
+              <Email />
+              <div>
+                <h3>Email</h3>
+                <p>willian.maziero@hotmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Contact;

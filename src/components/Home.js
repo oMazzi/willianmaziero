@@ -19,7 +19,7 @@ const Home = () => {
         setCurrentPhraseIndex(currentPhraseIndex + 1);
     };
 
-    const typeInterval = setInterval(typePhrase, 3500);
+    const typeInterval = setInterval(typePhrase, 2000);
 
     return () => {
       clearInterval(typeInterval);

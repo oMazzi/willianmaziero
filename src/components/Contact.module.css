@@ -1,0 +1,133 @@
+p {
+  color: #828282;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.title h1{
+  font-size: 2rem;
+ text-shadow: 2px 2px 3px rgba(24, 23, 127, 0.3);
+ position: relative;
+  display: inline-block;
+  border-bottom: 2px solid #212A3E;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  width: 30rem;
+  margin-left: 2rem;
+}
+
+.form h3 {
+  grid-column: 1/3;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.inputFullRow {
+  grid-column: 1/3;
+}
+
+.form div input {
+  width: 100%;
+}
+
+.inputContainer {
+  margin-right: .2rem;
+}
+
+.inputContainer label{
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#212A3E;	
+  pointer-events: none;
+	transition: all 0.5s ease-in-out;
+}
+.inputContainer input{ 
+  border:0;
+  border-bottom:1px solid #212A3E;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#212A3E;
+  margin-bottom: .2rem;
+}
+
+.inputContainer input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid red;	
+}
+
+.inputContainer textarea {
+  resize: none;
+  border:0;
+  border-bottom:1px solid #212A3E;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#212A3E;
+}
+
+.inputContainer textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.btn button {
+  border: none;
+  background-color: #212A3E;
+  color: #FFF;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  letter-spacing: 1px;
+  transition: all .3s;
+  border-radius: .5rem;
+}
+
+.btn button:hover {
+  background-color: #141a26;
+}
+
+.titleContact {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.containerContact {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2rem;
+}
+
+.containerContact div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.containerContact div div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.contactMain p {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
