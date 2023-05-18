@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './About.module.css';
-import { ReactComponent as Profile } from '../assets/profile.svg';
+import avatar from '../assets/profile.png';
 
 const About = () => {
   return (
     <section className={styles.container}>
       <section className={styles.avatar}>
-        <Profile />
+        <img src={avatar} alt="Profile" />
       </section>
       <section className={styles.about}>
         <div className={styles.mainContent}>
