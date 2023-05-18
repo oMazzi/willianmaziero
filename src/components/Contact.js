@@ -23,16 +23,20 @@ const Contact = () => {
     setMessage(event.target.value);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <section>
       <div className={styles.title}>
         <h1>Contact</h1>
       </div>
       <div className={styles.container}>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <h3>Message me</h3>
           <div className={styles.inputContainer}>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input
               value={name}
               id="name"
@@ -41,7 +45,7 @@ const Contact = () => {
             />
           </div>
           <div className={styles.inputContainer}>
-            <label for="subject">Subject</label>
+            <label htmlFor="subject">Subject</label>
             <input
               value={subject}
               type="text"
@@ -50,7 +54,7 @@ const Contact = () => {
             />
           </div>
           <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               value={email}
               type="text"
@@ -59,8 +63,9 @@ const Contact = () => {
             />
           </div>
           <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
-            <label for="message">Send your message..</label>
+            <label></label>
             <textarea
+              placeholder="Send your message.."
               value={message}
               name="Message"
               id="message"
