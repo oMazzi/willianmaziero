@@ -27,12 +27,7 @@ const Portfolio = () => {
   return (
     <section className={styles.grid}>
       {projects.map((project) => (
-        <div
-          className={`${styles.container} ${
-            project.enabled === false ? styles.buttonDisabled : ''
-          }`}
-          key={project.name}
-        >
+        <div className={styles.container} key={project.name}>
           <img
             src={project.splash}
             className={styles.image}
