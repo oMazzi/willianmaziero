@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b26d0ba7ad9588074693",
+    "revision": "594dcfbe60cc791c89b8",
     "url": "/willianmaziero/static/css/main.7763f605.chunk.css"
   },
   {
-    "revision": "b26d0ba7ad9588074693",
-    "url": "/willianmaziero/static/js/main.b26d0ba7.chunk.js"
+    "revision": "594dcfbe60cc791c89b8",
+    "url": "/willianmaziero/static/js/main.594dcfbe.chunk.js"
   },
   {
     "revision": "62f89b0737526706d4ea",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/willianmaziero/static/media/linkedin-3.99b5346c.svg"
   },
   {
-    "revision": "6f5dec6ebdee77fffdb6d0a520ecffc6",
+    "revision": "db0b6d7c693e4b98ddac8b3097408f7e",
     "url": "/willianmaziero/index.html"
   }
 ];
