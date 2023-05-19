@@ -1,7 +1,7 @@
 {
   "main.css": "/willianmaziero/static/css/main.7763f605.chunk.css",
-  "main.js": "/willianmaziero/static/js/main.9efd06be.chunk.js",
-  "main.js.map": "/willianmaziero/static/js/main.9efd06be.chunk.js.map",
+  "main.js": "/willianmaziero/static/js/main.023ff152.chunk.js",
+  "main.js.map": "/willianmaziero/static/js/main.023ff152.chunk.js.map",
   "static/js/1.62f89b07.chunk.js": "/willianmaziero/static/js/1.62f89b07.chunk.js",
   "static/js/1.62f89b07.chunk.js.map": "/willianmaziero/static/js/1.62f89b07.chunk.js.map",
   "runtime~main.js": "/willianmaziero/static/js/runtime~main.b4be688e.js",
@@ -18,6 +18,6 @@
   "static/media/linkedin-3.99b5346c.svg": "/willianmaziero/static/media/linkedin-3.99b5346c.svg",
   "static/css/main.7763f605.chunk.css.map": "/willianmaziero/static/css/main.7763f605.chunk.css.map",
   "index.html": "/willianmaziero/index.html",
-  "precache-manifest.bac0ab705cbf7ccacb6aee6f3ccb1951.js": "/willianmaziero/precache-manifest.bac0ab705cbf7ccacb6aee6f3ccb1951.js",
+  "precache-manifest.7808dda3251cd08b36e41b824a2f1321.js": "/willianmaziero/precache-manifest.7808dda3251cd08b36e41b824a2f1321.js",
   "service-worker.js": "/willianmaziero/service-worker.js"
 }
