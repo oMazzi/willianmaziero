@@ -9,7 +9,7 @@ const Header = () => {
       <div className={styles.logo}>
         <Link
           className={styles.logo}
-          to={'/willmaziero'}
+          to={'/willianmaziero'}
           aria-label="Will Maziero"
         >
           <Logo />
