@@ -73,7 +73,7 @@ button:disabled:hover{
   padding-left: 2rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   .grid {
     display: flex;
     flex-wrap: wrap;
