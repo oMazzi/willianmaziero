@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "023ff15224ff55a48332",
-    "url": "/willianmaziero/static/css/main.7763f605.chunk.css"
+    "revision": "d74289fdb6db242830f6",
+    "url": "/willianmaziero/static/css/main.c2a6726a.chunk.css"
   },
   {
-    "revision": "023ff15224ff55a48332",
-    "url": "/willianmaziero/static/js/main.023ff152.chunk.js"
+    "revision": "d74289fdb6db242830f6",
+    "url": "/willianmaziero/static/js/main.d74289fd.chunk.js"
   },
   {
-    "revision": "62f89b0737526706d4ea",
-    "url": "/willianmaziero/static/js/1.62f89b07.chunk.js"
+    "revision": "4c77e8b8b48621ff89b7",
+    "url": "/willianmaziero/static/js/1.4c77e8b8.chunk.js"
   },
   {
     "revision": "b4be688e650068c8904a",
@@ -20,20 +20,12 @@ self.__precacheManifest = [
     "url": "/willianmaziero/static/media/profile.22d5b832.png"
   },
   {
-    "revision": "3872bbf1f1aa5690b5a8cad4acf5e534",
-    "url": "/willianmaziero/static/media/splashDogs.3872bbf1.png"
+    "revision": "7e1b5d3f66e677638c18e3ba3223dc1c",
+    "url": "/willianmaziero/static/media/logo.7e1b5d3f.svg"
   },
   {
-    "revision": "868b56e01a52c8ac4a3f447baef02fab",
-    "url": "/willianmaziero/static/media/splashOrbiout.868b56e0.png"
-  },
-  {
-    "revision": "e435971af0d6dc17e79837d5e6fe0cc7",
-    "url": "/willianmaziero/static/media/logo.e435971a.svg"
-  },
-  {
-    "revision": "098a8f04cb63f203f6a1e0e64264022e",
-    "url": "/willianmaziero/static/media/arrowCorner.098a8f04.svg"
+    "revision": "8115015b1fb2c413959ce0a834694dc2",
+    "url": "/willianmaziero/static/media/arrowCorner.8115015b.svg"
   },
   {
     "revision": "775fedca720ea9f6d9a5efa8273e3650",
@@ -56,7 +48,7 @@ self.__precacheManifest = [
     "url": "/willianmaziero/static/media/linkedin-3.99b5346c.svg"
   },
   {
-    "revision": "db6be4116f8947628f460ad9d1bf0a00",
+    "revision": "8c0fcd3eebc526159db391eaef572925",
     "url": "/willianmaziero/index.html"
   }
 ];
