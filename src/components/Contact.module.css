@@ -81,7 +81,7 @@ p {
   width:100%;
   padding:8px 0 5px 0;
   font-size:16px;
-  color:#212A3E;
+  color: #212A3E;
 }
 
 .inputContainer textarea:focus {
@@ -130,4 +130,54 @@ p {
 .contactMain p {
   margin-top: 1rem;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 480px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+  .title {
+    width: 100vw;
+    margin-top: .75rem;
+  }
+  .title h1 {
+    font-size: 1.25rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .form {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+  }
+  .form h3{
+    width: 100vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .form div {
+    width: 80vw;
+    margin-right: 1rem;
+  }
+  .containerContactMain {
+    max-width: 80vw;
+  }
+  .titleContact{
+    margin-top: 1rem;
+  }
+  .contactMain p {
+    margin-bottom: 1rem;
+  }
+  .btn button {
+    padding: .5rem .5rem;
+  }
+  .inputFullRow textarea {
+    height: 4rem;
+  }
 }

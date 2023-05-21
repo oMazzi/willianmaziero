@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  height: 610px;
+  height: 80vh;
 }
 
 .container svg {
@@ -11,7 +11,7 @@
 
 .about {
   padding-bottom: 8rem;
-  width: 650px;
+  width: 60vw;
 }
 
 .mainContent {
@@ -60,4 +60,38 @@
   width: 300px;
   border-radius: 50%;
 }
+
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100vw;
+    margin-top: 1rem;
+  }
+  .avatar img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-size: 1rem;
+  }
+  .title{
+    margin-top: .5rem;
+  }
+  .titleSecond {
+    margin: .5rem 0 .5rem 0;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about div p {
+    color: #828282;
+    margin-bottom: .2rem;
+  }
+  }
 

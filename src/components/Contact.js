@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <section>
+    <section className={styles.grid}>
       <div className={styles.title}>
         <h1>Contact</h1>
       </div>
@@ -78,7 +78,7 @@ const Contact = () => {
             <button type="submit">Send Message</button>
           </div>
         </form>
-        <div>
+        <div className={styles.containerContactMain}>
           <div className={styles.contactMain}>
             <h3 className={styles.titleContact}>Contact Information</h3>
             <p>We can work and build amazing things together</p>

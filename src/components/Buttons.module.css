@@ -1,11 +1,12 @@
 .container {
   display: flex;
+  align-items: end;
   flex-direction: column;
   width: fit-content;
   scale: 1.2;
+  margin-left: 1rem;
   position: absolute;
-  top: 640px;
-  left: 10px;
+  top: 85vh;
   z-index: 1000;
 }
 

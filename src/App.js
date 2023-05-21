@@ -14,7 +14,7 @@ const App = () => {
     <div className={styles.app}>
       <BrowserRouter>
         <Header />
-        <Buttons />
+        <Buttons className={styles.buttons} />
         <Routes>
           <Route path="/willianmaziero/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -1,6 +1,6 @@
 .grid {
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   height: 80vh;
 }
@@ -66,8 +66,29 @@
 button:disabled:hover{
   transform: scale(1);
   background-color: #EBECF0;
+  cursor: auto;
 }
 
 .titleButton {
   padding-left: 2rem;
 }
+
+@media (max-width: 480px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+  }
+  .container {
+    width: 100vw;
+    height: 20vh;
+    margin: 2rem 0 2rem 0;
+    padding: .5rem 0 .5rem 0;
+  }
+  .container div {
+  padding-left: 1rem;
+}
+  .title {
+    font-size: 2rem;
+  }
+  }
