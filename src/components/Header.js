@@ -7,11 +7,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link
-          className={styles.logo}
-          to={'/willianmaziero'}
-          aria-label="Will Maziero"
-        >
+        <Link to={'/willianmaziero'} aria-label="Will Maziero">
           <Logo />
         </Link>
       </div>

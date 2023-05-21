@@ -1,47 +1,58 @@
 import React from 'react';
-import splashDogs from '../assets/splashDogs.png';
-import splashOrbiout from '../assets/splashOrbiout.png';
 import styles from './Portfolio.module.css';
 import { ReactComponent as Arrow } from '../assets/arrowCorner.svg';
 
 const Portfolio = () => {
   const projects = [
     {
-      name: 'Dogs Social Media',
-      tech: 'React - Redux - APIs',
-      splash: splashDogs,
-      enabled: true,
+      name: 'DOGS SOCIAL MEDIA',
+      tech: 'React - Redux - APIs - CSS',
+      link: 'https://omazzi.github.io/dogs.socialmedia/',
+      active: true,
+      color: { 'background-color': '#FFBB11' },
     },
     {
-      name: 'Orbiout',
+      name: 'ORBIOUT',
       tech: 'React - Redux - APIs - CSS',
-      splash: splashOrbiout,
-      enabled: false,
+      link: null,
+      active: false,
+      color: { 'background-color': '#353538' },
     },
   ];
 
-  function handleClick() {
-    window.open('https://omazzi.github.io/dogs.socialmedia/', '_blank');
-  }
+  console.log(projects.link);
 
   return (
     <section className={styles.grid}>
       {projects.map((project) => (
-        <div className={styles.container} key={project.name}>
-          <img
-            src={project.splash}
-            className={styles.image}
-            alt={project.name}
-          />
-          <div className={styles.titleContainer}>
-            <h2 className={styles.title}>{project.name}</h2>
-            <button className={styles.button} onClick={handleClick}>
-              <span className={styles.titleButton}>VISIT</span>
-              <span>
-                <Arrow />
-              </span>
-            </button>
-            <p>{project.tech}</p>
+        <div
+          className={styles.container}
+          key={project.name}
+          style={project.color}
+        >
+          <div>
+            <div className={styles.titleContainer}>
+              <h2 className={styles.title}>{project.name}</h2>
+              <p>{project.tech}</p>
+              <button
+                disabled={!project.active}
+                className={`${styles.button} ${
+                  !project.active ? styles.disabled : ''
+                }`}
+                onClick={() => {
+                  window.open(project.link, '_blank');
+                }}
+              >
+                {project.active ? (
+                  <span className={styles.titleButton}>VISIT</span>
+                ) : (
+                  <span className={styles.titleButton}>IN PROGRESS..</span>
+                )}
+                <span>
+                  <Arrow />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       ))}

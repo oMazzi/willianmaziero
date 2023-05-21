@@ -1,70 +1,52 @@
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
+  display: flex;
+ justify-content: space-between;
   align-items: center;
   height: 80vh;
 }
 
 .container {
-  width: 500px;
-  height: 500px;
+  width: 48vw;
+  height: 30vh;
   border: none;
-  border-radius: .5rem;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 5px 5px 4px rgba(24, 23, 127, 0.05);
+  box-shadow: 5px 5px 4px rgba(24, 23, 127, 0.1);
   transition: all .3s;
+  display: flex;
+  align-items: center;
+}
+
+.container div {
+  padding-left: 2rem;
 }
 
 .container:hover {
   box-shadow: 6px 6px 4px rgba(24, 23, 127, 0.2);
 }
 
-.container:first-child {
-  grid-row: span 2;
-  height: auto;
-}
-.container:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-  overflow: auto;
-  height: 250px;
-  margin-top: 74px;
-  align-items: center;
-}
-
-.image {
-  width: 100%;
-}
-
-.titleContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  align-items: center;
-}
-
 .title {
-  font-size: 1.2rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 3px rgba(24, 23, 127, 0.2);
-  font-weight: 400;
- grid-column: 1;
- grid-row: 1;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.titleContainer p {
+  font-size: 1.5rem;
+  color: #FFF;
+  padding-bottom: 3rem;
 }
 
 .button {
   border: none;
-  background-color: #3d4c6e;
-  color: #FFF;
+  background-color: #EBECF0;
+  color: #000;
   cursor: pointer;
   letter-spacing: 1px;
   transition: all .3s;
-  border-radius: .5rem;
   height: 3rem;
-  width: 10rem;
+  width: 15rem;
   grid-row: span 2;
   align-self: center;
   justify-self: center;
@@ -77,32 +59,15 @@
 }
 
 .button:hover {
-  background-color: #536796;
+  background-color: #C2C2C2;
   transform: scale(1.1);
-  box-shadow: 2px 2px 3px rgba(24, 23, 127, 0.2);
+}
+
+button:disabled:hover{
+  transform: scale(1);
+  background-color: #EBECF0;
 }
 
 .titleButton {
   padding-left: 2rem;
-}
-
-.container:nth-child(2) .titleContainer {
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr;
-  align-items: center;
-  padding: .5rem;
-}
-
-.container:nth-child(2) .titleContainer h2 {
-  margin: 0 0 0 .5rem;
-}
-
-.container:nth-child(2) .button {
-  grid-column: 3;
-}
-
-.container:nth-child(2) p {
-  grid-column: 2;
-  grid-row: 1;
-  padding: 0;
 }
