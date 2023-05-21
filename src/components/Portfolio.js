@@ -46,7 +46,7 @@ const Portfolio = () => {
                 {project.active ? (
                   <span className={styles.titleButton}>VISIT</span>
                 ) : (
-                  <span className={styles.titleButton}>IN PROGRESS..</span>
+                  <span className={styles.titleButton}>IN PROGRESS...</span>
                 )}
                 <span>
                   <Arrow />
