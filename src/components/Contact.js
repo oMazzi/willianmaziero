@@ -3,12 +3,19 @@ import styles from './Contact.module.css';
 import { ReactComponent as Person } from '../assets/person.svg';
 import { ReactComponent as Location } from '../assets/location.svg';
 import { ReactComponent as Email } from '../assets/email.svg';
+import useForm from '../hooks/useForm';
 
 const Contact = () => {
   const [name, setName] = React.useState('');
   const [subject, setSubject] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [message, setMessage] = React.useState('');
+
+  const formName = useForm();
+  const formSubject = useForm();
+  const formEmail = useForm('email');
+  const formText = useForm();
+  const { validate, onBlur } = useForm();
 
   const handleChangeName = (event) => {
     setName(event.target.value);
@@ -25,6 +32,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    window.location.href = '/willianmaziero';
   };
 
   return (
@@ -42,6 +50,9 @@ const Contact = () => {
               id="name"
               type="text"
               onChange={handleChangeName}
+              name="formName"
+              onBlur={onBlur}
+              {...formName}
             />
           </div>
           <div className={styles.inputContainer}>
@@ -51,15 +62,19 @@ const Contact = () => {
               type="text"
               id="subject"
               onChange={handleChangeSubject}
+              name="formSubject"
+              {...formSubject}
             />
           </div>
           <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
             <label htmlFor="email">Email</label>
             <input
               value={email}
-              type="text"
-              id="email"
+              type="email"
               onChange={handleChangeEmail}
+              name="formEmail"
+              onBlur={onBlur}
+              {...formEmail}
             />
           </div>
           <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
@@ -67,11 +82,12 @@ const Contact = () => {
             <textarea
               placeholder="Send your message.."
               value={message}
-              name="Message"
               id="message"
               cols="30"
               rows="5"
               onChange={handleChangeMessage}
+              name="formText"
+              {...formText}
             ></textarea>
           </div>
           <div className={styles.btn}>
