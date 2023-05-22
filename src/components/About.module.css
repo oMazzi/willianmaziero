@@ -76,7 +76,7 @@
   .about {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: start;
     font-size: 1rem;
   }
   .title{

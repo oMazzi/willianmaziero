@@ -17,3 +17,9 @@
 .container a:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 720px) {
+  .container {
+    top: 80vh;
+  }
+}
