@@ -15,7 +15,7 @@ const Contact = () => {
   const formSubject = useForm();
   const formEmail = useForm('email');
   const formText = useForm();
-  const { validate, onBlur } = useForm();
+  const { onBlur } = useForm();
 
   const handleChangeName = (event) => {
     setName(event.target.value);
