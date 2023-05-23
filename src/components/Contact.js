@@ -32,27 +32,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(
-      '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',
-    );
-    const msg = {
-      to: 'willian.maziero@hotmail.com', // Change to your recipient
-      from: 'willian.maziero@hotmail.com', // Change to your verified sender
-      name: toString({ name }),
-      subject: toString({ subject }),
-      text: toString({ message }),
-      email: toString({ email }),
-    };
-    sgMail
-      .send(msg)
-      .then(() => {
-        console.log('Email sent');
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-    // window.location.href = '/willianmaziero';
+    window.location.href = '/willianmaziero';
   };
 
   return (
