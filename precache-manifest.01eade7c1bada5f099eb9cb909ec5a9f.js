@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "c7cab94c051695a70b6b",
-    "url": "/willianmaziero/static/css/main.f9bb8f63.chunk.css"
+    "revision": "0851675de85e3d223d05",
+    "url": "/willianmaziero/static/css/main.4056b26a.chunk.css"
   },
   {
-    "revision": "c7cab94c051695a70b6b",
-    "url": "/willianmaziero/static/js/main.c7cab94c.chunk.js"
+    "revision": "0851675de85e3d223d05",
+    "url": "/willianmaziero/static/js/main.0851675d.chunk.js"
   },
   {
-    "revision": "ce3507cc4fb2aa60ebbc",
-    "url": "/willianmaziero/static/js/1.ce3507cc.chunk.js"
+    "revision": "d456aa7b6eef2bbd6d26",
+    "url": "/willianmaziero/static/js/1.d456aa7b.chunk.js"
   },
   {
     "revision": "b4be688e650068c8904a",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/willianmaziero/static/media/linkedin-3.99b5346c.svg"
   },
   {
-    "revision": "de08a70d7ab38511eb2d61c4f2c22884",
+    "revision": "844bc9a88aa1e63edecc20c1a6dacc4c",
     "url": "/willianmaziero/index.html"
   }
 ];
