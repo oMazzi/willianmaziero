@@ -3,37 +3,37 @@ import styles from './Contact.module.css';
 import { ReactComponent as Person } from '../assets/person.svg';
 import { ReactComponent as Location } from '../assets/location.svg';
 import { ReactComponent as Email } from '../assets/email.svg';
-import useForm from '../hooks/useForm';
+import avatar from '../assets/profile.png';
 
 const Contact = () => {
-  const [name, setName] = React.useState('');
-  const [subject, setSubject] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [message, setMessage] = React.useState('');
+  // const [name, setName] = React.useState('');
+  // const [subject, setSubject] = React.useState('');
+  // const [email, setEmail] = React.useState('');
+  // const [message, setMessage] = React.useState('');
+  // const [contato, setContato] = React.useState([]);
 
-  const formName = useForm();
-  const formSubject = useForm();
-  const formEmail = useForm('email');
-  const formText = useForm();
-  const { onBlur } = useForm();
+  // const handleChangeName = (event) => {
+  //   setName(event.target.value);
+  // };
+  // const handleChangeSubject = (event) => {
+  //   setSubject(event.target.value);
+  // };
+  // const handleChangeEmail = (event) => {
+  //   setEmail(event.target.value);
+  // };
+  // const handleChangeMessage = (event) => {
+  //   setMessage(event.target.value);
+  // };
 
-  const handleChangeName = (event) => {
-    setName(event.target.value);
-  };
-  const handleChangeSubject = (event) => {
-    setSubject(event.target.value);
-  };
-  const handleChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-  const handleChangeMessage = (event) => {
-    setMessage(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    window.location.href = '/willianmaziero';
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   setContato([
+  //     ...contato,
+  //     { name: name, email: email, subject: subject, message: message },
+  //   ]);
+  //   console.log(contato);
+  //   // window.location.href = '/willianmaziero';
+  // };
 
   return (
     <section className={styles.grid}>
@@ -41,7 +41,10 @@ const Contact = () => {
         <h1>Contact</h1>
       </div>
       <div className={styles.container}>
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <section className={styles.avatar}>
+          <img src={avatar} alt="Profile" />
+        </section>
+        {/* <form className={styles.form} onSubmit={handleSubmit}>
           <h3>Message me</h3>
           <div className={styles.inputContainer}>
             <label htmlFor="name">Name</label>
@@ -51,8 +54,6 @@ const Contact = () => {
               type="text"
               onChange={handleChangeName}
               name="formName"
-              onBlur={onBlur}
-              {...formName}
             />
           </div>
           <div className={styles.inputContainer}>
@@ -63,7 +64,6 @@ const Contact = () => {
               id="subject"
               onChange={handleChangeSubject}
               name="formSubject"
-              {...formSubject}
             />
           </div>
           <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
@@ -73,8 +73,6 @@ const Contact = () => {
               type="email"
               onChange={handleChangeEmail}
               name="formEmail"
-              onBlur={onBlur}
-              {...formEmail}
             />
           </div>
           <div className={`${styles.inputFullRow} ${styles.inputContainer}`}>
@@ -87,13 +85,12 @@ const Contact = () => {
               rows="5"
               onChange={handleChangeMessage}
               name="formText"
-              {...formText}
             ></textarea>
           </div>
           <div className={styles.btn}>
             <button type="submit">Send Message</button>
           </div>
-        </form>
+        </form> */}
         <div className={styles.containerContactMain}>
           <div className={styles.contactMain}>
             <h3 className={styles.titleContact}>Contact Information</h3>
