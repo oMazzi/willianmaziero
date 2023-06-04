@@ -12,6 +12,13 @@ const Portfolio = () => {
       color: { 'background-color': '#FFBB11' },
     },
     {
+      name: 'SPORTS CHAT',
+      tech: 'React - Firebase - Reactfire - CSS',
+      link: 'https://omazzi.github.io/sports-chat-reactfire/',
+      active: true,
+      color: { 'background-color': '#3E884A' },
+    },
+    {
       name: 'ORBIOUT',
       tech: 'React - Redux - APIs - CSS',
       link: null,

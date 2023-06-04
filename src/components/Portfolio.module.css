@@ -1,8 +1,9 @@
 .grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 80vh;
+  flex-wrap: wrap;
 }
 
 .container {
