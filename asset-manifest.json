@@ -1,9 +1,9 @@
 {
-  "main.css": "/willianmaziero/static/css/main.4056b26a.chunk.css",
-  "main.js": "/willianmaziero/static/js/main.0851675d.chunk.js",
-  "main.js.map": "/willianmaziero/static/js/main.0851675d.chunk.js.map",
-  "static/js/1.d456aa7b.chunk.js": "/willianmaziero/static/js/1.d456aa7b.chunk.js",
-  "static/js/1.d456aa7b.chunk.js.map": "/willianmaziero/static/js/1.d456aa7b.chunk.js.map",
+  "main.css": "/willianmaziero/static/css/main.1a95675d.chunk.css",
+  "main.js": "/willianmaziero/static/js/main.84fc740e.chunk.js",
+  "main.js.map": "/willianmaziero/static/js/main.84fc740e.chunk.js.map",
+  "static/js/1.925e6040.chunk.js": "/willianmaziero/static/js/1.925e6040.chunk.js",
+  "static/js/1.925e6040.chunk.js.map": "/willianmaziero/static/js/1.925e6040.chunk.js.map",
   "runtime~main.js": "/willianmaziero/static/js/runtime~main.b4be688e.js",
   "runtime~main.js.map": "/willianmaziero/static/js/runtime~main.b4be688e.js.map",
   "static/media/profile.png": "/willianmaziero/static/media/profile.22d5b832.png",
@@ -14,8 +14,8 @@
   "static/media/email.7a4e6fec.svg": "/willianmaziero/static/media/email.7a4e6fec.svg",
   "static/media/github-1.27996f85.svg": "/willianmaziero/static/media/github-1.27996f85.svg",
   "static/media/linkedin-3.99b5346c.svg": "/willianmaziero/static/media/linkedin-3.99b5346c.svg",
-  "static/css/main.4056b26a.chunk.css.map": "/willianmaziero/static/css/main.4056b26a.chunk.css.map",
+  "static/css/main.1a95675d.chunk.css.map": "/willianmaziero/static/css/main.1a95675d.chunk.css.map",
   "index.html": "/willianmaziero/index.html",
-  "precache-manifest.01eade7c1bada5f099eb9cb909ec5a9f.js": "/willianmaziero/precache-manifest.01eade7c1bada5f099eb9cb909ec5a9f.js",
+  "precache-manifest.b6d6752ec60f6e448e2214b57ed12c67.js": "/willianmaziero/precache-manifest.b6d6752ec60f6e448e2214b57ed12c67.js",
   "service-worker.js": "/willianmaziero/service-worker.js"
 }
